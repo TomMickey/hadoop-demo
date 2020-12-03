@@ -17,23 +17,6 @@ import org.apache.hadoop.util.ToolRunner;
 
 public class WordDriver extends Configured implements Tool{
 
-	/*
-	 * public static void main(String[] args) throws Exception { Configuration conf
-	 * = new Configuration(); Job job = Job.getInstance(conf, "JobName");
-	 * job.setJarByClass(com.grgbanking.tool.WordDriver.class); // TODO: specify a
-	 * mapper job.setMapperClass(Mapper.class); // TODO: specify a reducer
-	 * job.setReducerClass(Reducer.class);
-	 * 
-	 * // TODO: specify output types job.setOutputKeyClass(Text.class);
-	 * job.setOutputValueClass(Text.class);
-	 * 
-	 * // TODO: specify input and output DIRECTORIES (not files)
-	 * FileInputFormat.setInputPaths(job, new Path("src"));
-	 * FileOutputFormat.setOutputPath(job, new Path("out"));
-	 * 
-	 * if (!job.waitForCompletion(true)) return; }
-	 */
-
 	@Override
 	public int run(String[] args) throws Exception {
 		Configuration conf = new Configuration();
